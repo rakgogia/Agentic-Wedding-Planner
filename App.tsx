@@ -65,7 +65,7 @@ const App: React.FC = () => {
                 <input
                   required
                   type="date"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
                   value={details.date}
                   onChange={(e) => setDetails({ ...details, date: e.target.value })}
                 />
@@ -76,7 +76,7 @@ const App: React.FC = () => {
                   required
                   type="text"
                   placeholder="e.g. Udaipur, Goa, Delhi"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
                   value={details.city}
                   onChange={(e) => setDetails({ ...details, city: e.target.value })}
                 />
@@ -88,7 +88,7 @@ const App: React.FC = () => {
                   type="number"
                   min="100000"
                   step="50000"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
                   value={details.budget}
                   onChange={(e) => setDetails({ ...details, budget: parseInt(e.target.value) })}
                 />
@@ -99,7 +99,7 @@ const App: React.FC = () => {
                   required
                   type="number"
                   min="20"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all"
                   value={details.guests}
                   onChange={(e) => setDetails({ ...details, guests: parseInt(e.target.value) })}
                 />
@@ -110,7 +110,7 @@ const App: React.FC = () => {
               <label className="block text-sm font-semibold text-gray-700 uppercase tracking-wider">Special Preferences & Style</label>
               <textarea
                 placeholder="e.g. Minimalist decor, traditional Rajasthani food, sustainable gifts, focus on outdoor venues..."
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all h-32 resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:border-shaadi-gold focus:ring-2 focus:ring-shaadi-gold/20 outline-none transition-all h-32 resize-none"
                 value={details.preferences}
                 onChange={(e) => setDetails({ ...details, preferences: e.target.value })}
               />
